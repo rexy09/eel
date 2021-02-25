@@ -4,8 +4,8 @@
 {% block content %}
 
 <body id="about-us" class=" 
-                                             ltr 
-                                            template-page">
+  ltr 
+   template-page">
   <div class="wrapper-container">
     <div class="wrapper">
         {% include 'header.html' %}
@@ -19,7 +19,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="breadcrumb">
-                    <a href="../index.html" title="Back to the frontpage" data-translate="breadcrumb.home">Home</a>
+                    <a href="{% url 'pages:index' %}" title="Back to the frontpage" data-translate="breadcrumb.home">Home</a>
                     <span class="tick" aria-hidden="true">/</span>
                     <strong>
                       <span>About Us</span>
