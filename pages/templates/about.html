@@ -1,0 +1,491 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<body id="about-us" class=" 
+                                             ltr 
+                                            template-page">
+  <div class="wrapper-container">
+    <div class="wrapper">
+        {% include 'header.html' %}
+
+        {% include 'sidemenu.html' %}
+      <div class="product-quickview"></div>
+      <main class="main-content">
+        <div class="main_container">
+          <div class="clearfix gts-breadcrumb">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="breadcrumb">
+                    <a href="../index.html" title="Back to the frontpage" data-translate="breadcrumb.home">Home</a>
+                    <span class="tick" aria-hidden="true">/</span>
+                    <strong>
+                      <span>About Us</span>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="shopify-section-about-template" class="shopify-section">
+            <div class="about-page">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="about-banner">
+                      <div class="images">
+                        <img class="b-lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="//cdn.shopify.com/s/files/1/0447/3569/2962/files/about2_18dcd7c0-977c-48e5-82f7-effa03db66d2_1600x1600.png?v=1596214376"
+                          width="100%" height="100%">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="about-text-info">
+                      <div class="about-content">
+                        <div class="info-item">
+                          <div class="info-left">
+                            <div class="title-about title-about-1">
+                              <h2>Who we are ?</h2>
+                            </div>
+                          </div>
+                          <div class="info-right">
+                            <div class="text-info">
+                              <span>
+                                <p>The name of the company “ELIGOD ENTERPRISES LIMITED” was incorporated
+                                    under the certificate of incorporation No 133561.</p>
+                                <p>We carry on importing and supply of School or Educational materials,
+                                    scientists
+                                    equipments and technological accessories such as primary and
+                                    secondary books,
+                                    computer accessories, laboratory equipments and chemicals.</p>
+                                <p>We have a vibrant management team assisted by very experienced
+                                    professionals
+                                    to deliver on our promises to our clients.</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-left">
+                              <div class="title-about title-about-2">
+                                <h2>Company Profile</h2>
+                              </div>
+                            </div>
+                            <div class="info-right">
+                              <div class="text-info">
+                                <span>
+                                  <p>Headed by the founder, Mr. Shoo Godwin and managed by a team of dedicated professionals,
+                                    It’s reputation for sales and service excellence has been acquired over a period of 5 years. Today,
+                                    EEL represents a comprehensive yet diversified range of products on behalf of manufacturers within the country.</p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="info-item">
+                          <div class="info-left">
+                            <div class="title-about title-about-2">
+                              <h2>Our Mission</h2>
+                            </div>
+                          </div>
+                          <div class="info-right">
+                            <div class="text-info">
+                              <span>
+                                <p>To establish Eligod Enterprises L.T.D as a reliable marked leader in Education & 
+                                    Research sectors by providing customers with high quality product, solutions and
+                                     services.</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-left">
+                              <div class="title-about title-about-2">
+                                <h2>Mini Statement</h2>
+                              </div>
+                            </div>
+                            <div class="info-right">
+                              <div class="text-info">
+                                <span>
+                                  <p>To provide suitable solutions and innovate, which will help the clients to optimize productivity.</p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="info-item contact-items">
+                          <div class="info-left">
+                            <div class="title-about title-about-3">
+                              <h2>Contact Us</h2>
+                            </div>
+                          </div>
+                          <div class="info-right">
+                            <div class="text-info">
+                              <span>
+                                <p>12 Fake Street,New York</p>
+                                <p>(08) 8827 633354<br>08) 08 4752 1499</p>
+                                <p>stores@company.com</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              jQuery('.main-content > .container').removeClass('container');
+            </script>
+          </div>
+        </div>
+      </main>
+      {% include 'footer.html' %}
+    </div>
+    </footer>
+    <div class="loading cbox">Processing...</div>
+    <div class="ajax-error-cbox cbox">
+      <div class="modal-inner">
+        <div class="ajax-error-title">Error</div>
+        <div class="ajax-error-message"></div>
+      </div>
+    </div>
+    <div class="ajax-success-cbox cbox">
+      <div class="content">
+        <p class="success-message show-cart">added to cart success.</p>
+        <p class="success-message show-wishlist">added to wishlist success.</p>
+        <a href="javascript:void(0)" class="close-cbox"><span class="ti-close"></span></a>
+      </div>
+    </div>
+  </div>
+  <!-- Begin quick-view-template -->
+  <div class="clearfix" id="quickview-popup" style="display:none">
+    <div class="overlay"></div>
+    <div class="product-content clearfix">
+      <div class="product-img col-xs-6">
+        <div class="quickview-featured-image"></div>
+        <div class="more-view">
+          <ul class="product-photo-thumbs  quickview-more-views-owlslider ">
+          </ul>
+        </div>
+      </div>
+      <div class="product-shop col-xs-6">
+        <div class="product-item">
+          <h2 class="product-name"><a>&nbsp;</a></h2>
+          <div class="product-details clearfix" id="add-to-cart-form">
+            <form action="https://gts-medil-02.myshopify.com/cart/add" method="post" class="variants">
+              <div class="prices">
+                <span class="text-price"> Price: </span>
+                <span class="compare-price"></span>
+                <span class="price"></span>
+              </div>
+              <p class="product-description"></p>
+              <select name='id' style="display:none"></select>
+              <div class="wrap-button">
+                <div class="wrap-qty">
+                  <div class="custom-qty">
+                    <input type="text" id="quantity" class="quantity" name="quantity" value="1">
+                    <div class="btn-plus">
+                      <span class="dec button down-qty">-</span>
+                      <span class="inc button up-qty">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="actions">
+                  <button type="button" class="ajax_addtocart product-add-cart btn" id="add-to-cart-btn"><span
+                      class="span-1">Add to Cart</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="close-popup"><i class="ti-close"></i></a>
+    </div>
+  </div>
+  <!-- End of quick-view-template -->
+  <script type="text/javascript">
+    Shopify.doNotTriggerClickOnThumb = false;
+    var selectCallbackQuickview = function (variant, selector) {
+      var productItem = jQuery('.product-quickview .product-item');
+      addToCart = productItem.find('.add-to-cart-btn .span-1'),
+        productPrice = productItem.find('.price'),
+        comparePrice = productItem.find('.compare-price'),
+        totalPrice = productItem.find('.total-price span');
+      if (variant) {
+        if (variant.available) {
+          // We have a valid product variant, so enable the submit button
+          addToCart.removeClass('disabled').removeAttr('disabled').text(window.inventory_text.add_to_cart);
+        } else {
+          // Variant is sold out, disable the submit button
+          addToCart.val(window.inventory_text.sold_out).addClass('disabled').attr('disabled', 'disabled');
+        }
+        // Regardless of stock, update the product price
+        productPrice.html(Shopify.formatMoney(variant.price, "<span class=money>${{amount}}</span>"));
+        // Also update and show the product's compare price if necessary
+        if (variant.compare_at_price > variant.price) {
+          comparePrice
+            .html(Shopify.formatMoney(variant.compare_at_price, "<span class=money>${{amount}}</span>"))
+            .show();
+          productPrice.addClass('on-sale');
+        } else {
+          comparePrice.hide();
+          productPrice.removeClass('on-sale');
+        }
+        // BEGIN SWATCHES
+        var form = jQuery('#' + selector.domIdPrefix).closest('form');
+        for (var i = 0, length = variant.options.length; i < length; i++) {
+          var radioButton = form.find('.swatch[data-option-index="' + i + '"] :radio[value="' + variant.options[i] +
+            '"]');
+          if (radioButton.size()) {
+            radioButton.get(0).checked = true;
+          }
+        }
+        // END SWATCHES
+        //update variant inventory
+        var inventoryInfo = productItem.find('.product-inventory span');
+        if (variant.available) {
+          if (variant.inventory_management != null) {
+            inventoryInfo.text(variant.inventory_quantity + " " + window.inventory_text.in_stock);
+          } else {
+            inventoryInfo.text(window.inventory_text.many_in_stock);
+          }
+        } else {
+          inventoryInfo.text(window.inventory_text.out_of_stock);
+        }
+        /*recaculate total price*/
+        //try pattern one before pattern 2
+        var regex = /([0-9]+[.|,][0-9]+[.|,][0-9]+)/g;
+        var unitPriceTextMatch = jQuery('.product-quickview .price').text().match(regex);
+        if (!unitPriceTextMatch) {
+          regex = /([0-9]+[.|,][0-9]+)/g;
+          unitPriceTextMatch = jQuery('.product-quickview .price').text().match(regex);
+        }
+        if (unitPriceTextMatch) {
+          var unitPriceText = unitPriceTextMatch[0];
+          var unitPrice = unitPriceText.replace(/[.|,]/g, '');
+          var quantity = parseInt(jQuery('.product-quickview input[name=quantity]').val());
+          var totalPrice = unitPrice * quantity;
+          var totalPriceText = Shopify.formatMoney(totalPrice, window.money_format);
+          totalPriceText = totalPriceText.match(regex)[0];
+          var regInput = new RegExp(unitPriceText, "g");
+          var totalPriceHtml = jQuery('.product-quickview .price').html().replace(regInput, totalPriceText);
+          jQuery('.product-quickview .total-price span').html(totalPriceHtml);
+        } /*end of price calculation*/
+        /*begin variant image*/
+        if (variant && variant.featured_image) {
+          var newImage = Shopify.resizeImage(variant.featured_image.src, 'small');
+          newImage = newImage.replace(/https?:/, '');
+          jQuery('.product-quickview .quickview-more-views img').each(function () {
+            var grandSize = jQuery(this).attr('src');
+            if (grandSize == newImage) {
+              jQuery(this).parent().trigger('click');
+              return false;
+            }
+          });
+        }
+        /*end of variant image*/
+      } else {
+        // The variant doesn't exist. Just a safegaurd for errors, but disable the submit button anyway
+        addToCart.text(window.inventory_text.unavailable).addClass('disabled').attr('disabled', 'disabled');
+      }
+    };
+  </script>
+  <!-- Footer scripts -->
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/bootstrap.min.js?v=14137471164888349019"
+    type="text/javascript"></script>
+  <script
+    src="http://cdn.shopify.com/shopifycloud/shopify/assets/themes_support/api.jquery-e94e010e92e659b566dbc436fdfe5242764380e00398907a14955ba301a4749f.js"
+    type="text/javascript"></script>
+  <script
+    src="http://cdn.shopify.com/shopifycloud/shopify/assets/themes_support/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/wow.min.js?v=10873324093807439636"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/jquery.fakecrop.js?v=3851961943490703162"
+    type="text/javascript"></script>
+  <script src="../services/javascripts/currencies.js" type="text/javascript"></script>
+  <script
+    src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/jquery.currencies.min.js?v=8663550281121119788"
+    type="text/javascript"></script>
+  <script>
+    // Pick your format here:  
+    // Can be 'money_format' or 'money_with_currency_format'
+    Currency.format = 'money_format';
+    var shopCurrency = 'USD';
+    var cookieCurrency = Currency.cookie.read();
+    // Fix for customer account pages 
+    jQuery('span.money span.money').each(function () {
+      jQuery(this).parent('span.money').removeClass('money');
+    });
+    // Add precalculated shop currency to data attribute 
+    jQuery('span.money').each(function () {
+      jQuery(this).attr('data-currency-USD', jQuery(this).html());
+    });
+    // Select all your currencies buttons.
+    var buttons = jQuery('#currencies a');
+    var currentCurrencies = jQuery('#pre-currencies');
+    // When the page loads.
+    if (cookieCurrency == null || cookieCurrency == shopCurrency || cookieCurrency == '') {
+      Currency.currentCurrency = shopCurrency;
+    } else {
+      Currency.currentCurrency = cookieCurrency;
+      Currency.convertAll(shopCurrency, cookieCurrency);
+      buttons.removeClass('selected');
+      jQuery('#currencies a[data-currency=' + cookieCurrency + ']').addClass('selected');
+      var htmlCurrently = jQuery('#currencies a[data-currency=' + cookieCurrency + ']').html();
+      currentCurrencies.html(htmlCurrently);
+      do_multi_currency_warning(Currency.currentCurrency, shopCurrency);
+    }
+    // When customer clicks on a currency button.
+    buttons.click(function () {
+      buttons.removeClass('selected');
+      jQuery(this).addClass('selected');
+      var newCurrency = jQuery(this).attr('data-currency');
+      var htmlCurrently = jQuery(this).html();
+      currentCurrencies.html(htmlCurrently);
+      Currency.convertAll(Currency.currentCurrency, newCurrency);
+      do_multi_currency_warning(Currency.currentCurrency, shopCurrency);
+    });
+    // For product options.
+    var original_selectCallback = window.selectCallback;
+    var selectCallback = function (variant, selector) {
+      original_selectCallback(variant, selector);
+      Currency.convertAll(shopCurrency, jQuery('#currencies a.selected').attr('data-currency'));
+      do_multi_currency_warning(Currency.currentCurrency, shopCurrency);
+    };
+    // do this each time you recalculate or page load
+    do_multi_currency_warning(Currency.currentCurrency, shopCurrency);
+    // a function to make the cart better when choosing different currencies
+    // explained in step 7 below
+    function do_multi_currency_warning(currentCurrency, shopCurrency) {
+      jQuery('.selected-currency').text(Currency.currentCurrency);
+      if (currentCurrency != shopCurrency) {
+        jQuery('.multi-currency-warning').text('*');
+        jQuery('.multi-currency-warning-bottom').show();
+      } else {
+        jQuery('.multi-currency-warning').text('');
+        jQuery('.multi-currency-warning-bottom').hide();
+      }
+    }
+  </script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/jquery.history.js?v=9788135271330519338"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/global.js?v=6169735948178919079"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/modernizr.custom.js?v=17648900509285201807"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/classie.js?v=2553876034997405128"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/modernizr.js?v=17435980448783108121"
+    type="text/javascript"></script>
+  <script src="http://cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/ajax.jquery.js?v=13505523022235086333"
+    type="text/javascript"></script>
+  <script>
+    jQuery(window).load(function () {
+      var bLazy = new Blazy();
+    });
+  </script>
+  <!-- 
+    <script src="//cdn.shopify.com/s/files/1/0447/3569/2962/t/5/assets/wish-list.js?1240" type="text/javascript"></script> -->
+  <div id="back-top" style="display: none;">
+    <a class="back-top" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  </div>
+  </div>
+  <script>
+    $(function () {
+      // Current Ajax request.
+      var currentAjaxRequest = null;
+      // Grabbing all search forms on the page, and adding a .search-results list to each.
+      var searchForms = $('form[action="/search"]').css('position', 'relative').each(function () {
+        // Grabbing text input.
+        var input = $(this).find('input[name="q"]');
+        // Adding a list for showing search results.
+        var offSet = input.position().top + input.innerHeight();
+        $('<ul class="search-results"></ul>').css({
+          'position': 'absolute',
+          'left': '0px',
+          'top': offSet
+        }).appendTo($(this)).hide();
+        // Listening to keyup and change on the text field within these search forms.
+        input.attr('autocomplete', 'off').bind('keyup change', function () {
+          // What's the search term?
+          var term = $(this).val();
+          // What's the search form?
+          var form = $(this).closest('form');
+          // What's the search URL?
+          var searchURL = '/search?type=product&q=title:' + term + '*';
+          // What's the search results list?
+          $('.searchbox').addClass('s-loading');
+          var resultsList = form.find('.search-results');
+          // If that's a new term and it contains at least 3 characters.
+          if (term.length > 2 && term != $(this).attr('data-old-term')) {
+            // Saving old query.
+            $(this).attr('data-old-term', term);
+            // Killing any Ajax request that's currently being processed.
+            if (currentAjaxRequest != null) currentAjaxRequest.abort();
+            // Pulling results.
+            currentAjaxRequest = $.getJSON(searchURL + '&view=json', function (data) {
+              // Reset results.
+              jQuery('.searchbox').addClass('s-loading');
+              resultsList.empty();
+              // If we have no results.
+              if (data.results_count == 0) {
+                resultsList.html('<li><span class="title">No results.</span></li>');
+                resultsList.fadeIn(200);
+                jQuery('.searchbox').removeClass('s-loading');
+              } else {
+                // If we have results.
+                $.each(data.results, function (index, item) {
+                  var link = $('<a></a>').attr('href', item.url);
+                  link.append('<span class="thumbnail"><img src="' + item.thumbnail +
+                  '" /></span>');
+                  link.append('<span class="title">' + item.title + '</span>');
+                  if (item.price > item.min_price) {
+                    link.append('<span class="price first">' + item.price + item.min_price +
+                      '</span>');
+                  } else {
+                    link.append('<span class="price last">' + item.min_price + '</span>');
+                  }
+                  link.wrap('<li><div class="item-search"></div></li>');
+                  resultsList.append(link.parent());
+                });
+                // The Ajax request will return at the most 10 results.
+                // If there are more than 10, let's link to the search results page.
+                if (data.results_count > 8) {
+                  resultsList.append('<li><span class="title"><a href="' + searchURL +
+                    '">See all results (' + data.results_count + ')</a></span></li>');
+                }
+                jQuery('.searchbox').removeClass('s-loading');
+                resultsList.fadeIn(200);
+              }
+            });
+          }
+        });
+      });
+      // Clicking outside makes the results disappear.
+      $('body').bind('click', function () {
+        $('.search-results').hide();
+        jQuery('.searchbox').removeClass('s-loading');
+      });
+    });
+  </script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery('.tp-caption').hide();
+      jQuery(window).load(function () {
+        jQuery('#loading').hide();
+        jQuery('.tp-caption').show();
+      });
+    });
+  </script>
+</body>
+  
+{% endblock content %}
+
